@@ -29,8 +29,6 @@ def remind(message):
             with open("remindment.txt", encoding="UTF-8") as file:
                 text_ = file.read()
             bot.send_message(message.chat.id, text_)
-            with open("remindment.txt", "w") as file:
-                file.write("")
 
         except ValueError:
             bot.send_message(message.chat.id, "🤨")
